@@ -1,0 +1,50 @@
+CLI = command line interface = apps que corren en la terminal
+
+
+REACT CLI (Para crear/inicializar un proyecto con React) =
+
+-react script (oficial)
+
+-Vite (Recomendado) - npm run dev
+
+PARA CREAR/INICIALIZAR Un proyecto en React con vite: 
+
+npm create vite@latest
+
+elegir el nombre de la carpeta del proyecto
+
+Seleccionar React como framework
+
+Variante: seleccionar javascript + SWC
+
+entrar a la carpeta (cd nombre_de_la_carpeta o con open folder/abrir carpeta en la carpeta creada )
+
+(SI ES LA PRIMERA VEZ): npm install
+
+para correr la pagina: npm run dev
+
+
+
+NPM: NODE PACKAGE MANAGER = manejador de paquetes de node
+
+-Se encarga de las instalaciones, estas instalaciones las hace en una carpeta llamada node_modules
+
+
+
+EJEMPLO DE DESESTRUCTURACION
+
+const objeto = { nombre: 'Pepe', apellido: 'Suarez', 'fecha hasta': '199903' };
+
+/* console.log(objeto['fecha hasta']) */
+
+const { nombre, apellido } = objeto;
+
+console.log(nombre);
+
+const saludar = ({ nombre, apellido }) => {
+  console.log('Hola ' + nombre + ' ' + apellido);
+};
+
+saludar({ nombre: 'Pepe', apellido: 'Suarez' });
+
+
